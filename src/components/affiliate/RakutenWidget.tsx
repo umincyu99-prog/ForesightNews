@@ -26,7 +26,7 @@ export default function RakutenWidget({ locale }: Props) {
           __html: [
             'rakuten_design="slide";',
             'rakuten_affiliateId="54f664af.73198454.54f664b0.365ccc97";',
-            'rakuten_items="ctsmatch";',
+            'rakuten_items="ranking";',
             'rakuten_genreId="0";',
             'rakuten_size="468x160";',
             'rakuten_target="_blank";',
