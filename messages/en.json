@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "all": "All",
+    "technology": "Technology",
+    "ai": "AI",
+    "business": "Business",
+    "science": "Science",
+    "world": "World"
+  },
+  "home": {
+    "headline": "World News, Curated.",
+    "subheadline": "Breaking international news, translated and delivered.",
+    "featured": "Featured",
+    "latest": "Latest News",
+    "readMore": "Read more",
+    "source": "Source"
+  },
+  "article": {
+    "readOriginal": "Read original in English",
+    "publishedAt": "Published",
+    "relatedProducts": "Related Products"
+  },
+  "footer": {
+    "description": "We source the latest international news and deliver it translated into Japanese.",
+    "links": "Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "common": {
+    "loading": "Loading...",
+    "noArticles": "No articles found",
+    "backToHome": "Back to Home"
+  }
+}

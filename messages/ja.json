@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "all": "すべて",
+    "technology": "テクノロジー",
+    "ai": "AI",
+    "business": "ビジネス",
+    "science": "サイエンス",
+    "world": "世界"
+  },
+  "home": {
+    "headline": "世界のニュースを、日本語で。",
+    "subheadline": "最新の国際ニュースをリアルタイムで翻訳・配信",
+    "featured": "注目記事",
+    "latest": "最新ニュース",
+    "readMore": "続きを読む",
+    "source": "ソース"
+  },
+  "article": {
+    "readOriginal": "英語原文を読む",
+    "publishedAt": "公開日時",
+    "relatedProducts": "関連商品"
+  },
+  "footer": {
+    "description": "世界の最新ニュースを英語ソースから取得し、日本語に翻訳してお届けします。",
+    "links": "リンク",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "noArticles": "記事が見つかりません",
+    "backToHome": "ホームに戻る"
+  }
+}

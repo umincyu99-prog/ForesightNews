@@ -1,0 +1,17 @@
+name: Fetch News
+
+on:
+  schedule:
+    # UTC 0:00, 8:00, 16:00 = JST 9:00, 17:00, 1:00
+    - cron: '0 0,8,16 * * *'
+  workflow_dispatch: # manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger news fetch
+        run: |
+          curl -f -X GET \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            "${{ secrets.SITE_URL }}/api/cron/fetch-news"
