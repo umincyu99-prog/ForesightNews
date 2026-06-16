@@ -1,5 +1,4 @@
 import { supabase } from '@/lib/supabase'
-import { fetchRakutenProducts } from '@/lib/rakuten'
 import RakutenWidget from '@/components/affiliate/RakutenWidget'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
@@ -41,7 +40,7 @@ export default async function ArticlePage({
   const title = locale === 'ja' ? article.title_ja : article.title_en
   const description = locale === 'ja' ? article.description_ja : article.description_en
 
-  const products = await fetchRakutenProducts(article.category)
+  // Rakuten widget is rendered client-side by category
 
   const dateStr = format(new Date(article.published_at), 'PPP p', {
     locale: locale === 'ja' ? ja : enUS,
@@ -93,7 +92,7 @@ export default async function ArticlePage({
         {locale === 'ja' ? '英語原文を読む' : 'Read original'}
       </a>
 
-      <RakutenWidget products={products} locale={locale} />
+      <RakutenWidget category={article.category} locale={locale} />
     </div>
   )
 }
