@@ -21,8 +21,9 @@ export default function RakutenWidget({ locale }: Props) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://hbb.afl.rakuten.co.jp/hsb/54f741df.2c84233b.54f741e0.f8609409/?me_id=1&me_adv_id=3282011&t=pict"
-          border={0}
-          style={{ margin: '2px' }}
+          width={300}
+          height={250}
+          style={{ margin: '2px', display: 'block' }}
           alt="楽天市場"
         />
       </a>
