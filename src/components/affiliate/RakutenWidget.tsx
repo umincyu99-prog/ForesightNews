@@ -1,5 +1,3 @@
-'use client'
-
 import type { Category } from '@/types'
 
 interface Props {
@@ -15,14 +13,19 @@ export default function RakutenWidget({ locale }: Props) {
       <p className="text-xs font-bold text-orange-600 dark:text-orange-400 mb-3 uppercase tracking-wide">
         {prLabel}
       </p>
-      <iframe
-        src="/rakuten-widget.html"
-        width="468"
-        height="160"
-        scrolling="no"
-        frameBorder="0"
-        style={{ border: 'none', maxWidth: '100%' }}
-      />
+      <a
+        href="https://hb.afl.rakuten.co.jp/hsc/54f741df.2c84233b.54f741e0.f8609409/?link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiI1IiwiYmFuIjozMjgyMDExLCJhbXAiOmZhbHNlfQ%3D%3D"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="https://hbb.afl.rakuten.co.jp/hsb/54f741df.2c84233b.54f741e0.f8609409/?me_id=1&me_adv_id=3282011&t=pict"
+          border={0}
+          style={{ margin: '2px' }}
+          alt="楽天市場"
+        />
+      </a>
       <p className="text-xs text-gray-400 mt-2">楽天アフィリエイト</p>
     </section>
   )
