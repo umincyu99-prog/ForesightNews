@@ -26,14 +26,16 @@ export async function fetchRakutenProducts(category: Category): Promise<RakutenP
   })
 
   try {
-    const res = await fetch(
-      `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?${params}`,
-      { next: { revalidate: 3600 } }
-    )
-    if (!res.ok) return []
+    const url = `https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?${params}`
+    const res = await fetch(url, { next: { revalidate: 3600 } })
     const data = await res.json()
+    if (!res.ok) {
+      console.error('Rakuten API error:', data)
+      return []
+    }
     return (data.Items ?? []).map((i: { Item: RakutenProduct }) => i.Item)
-  } catch {
+  } catch (e) {
+    console.error('Rakuten fetch error:', e)
     return []
   }
 }
