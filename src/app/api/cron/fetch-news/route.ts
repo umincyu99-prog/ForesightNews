@@ -57,6 +57,7 @@ export async function GET(req: NextRequest) {
   let totalInserted = 0
 
   for (const cat of CATEGORIES) {
+    await new Promise((r) => setTimeout(r, 1000))
     try {
       // AI category uses technology topic with AI keyword search
       const articles =
